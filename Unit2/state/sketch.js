@@ -1,5 +1,5 @@
 let state = 0 ;
-let timer = 0 ;
+//let timer = 0 ;
 
 
 function setup() {
@@ -70,14 +70,14 @@ function draw() {
 
   }
 
-  timer++ ;
-  if(timer >=5*60){
-    timer = 0 ;
-    state++ ;
-    if(state > 4) state = 0 ;
+//  timer++ ;
+//  if(timer >=5*60){
+//    timer = 0 ;
+  //  state++ ;
+  //  if(state > 4) state = 0 ;
 
 
-  }
+  //}
 
 }
 
