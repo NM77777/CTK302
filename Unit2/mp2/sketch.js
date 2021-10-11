@@ -58,7 +58,7 @@ function draw() {
       rect(0, 0, 200, 800);
       fill('black');
       textSize(30);
-      text("Aww the crab is slepping.", 268, 100);
+      text("Aww the crab is sleeping.", 268, 100);
       textSize(30);
       text("Don't", 400, 150);
       fill('red');
