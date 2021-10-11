@@ -26,6 +26,7 @@ function draw() {
     case 0:
     //image()
       text("Please touch screen", 5, 22) ;
+      image(two, width/2, height/2, 200, 200) ;
       break ;
 
       case 1:
