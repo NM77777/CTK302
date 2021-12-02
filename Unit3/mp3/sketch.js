@@ -29,9 +29,9 @@ function setup() {
   ghost = loadImage("assets/ghost.png");
   forest = loadImage("assets/forest.jpeg");
   gameover = loadImage("assets/gameover.png");
-  hs = loadFont("assets/horroridstag.ttf") ;
+  hs = loadFont("assets/horroroidstag.ttf") ;
   textAlign(CENTER) ;
-
+      textFont(hs) ; // currently does not work.
   reaper = reaperright;
 }
 
@@ -39,7 +39,7 @@ function draw() {
   switch (state) {
     case 0: // welcome
       background("black");
-       // textFont(hs) ; currently does not work.
+
       textSize(50);
       fill("white");
       text("Ghost Reaper", width/2, 100);
@@ -126,12 +126,14 @@ function resetTheGame() {
     cars.push(new Car());
   }
 
-  function keyPressed() {
-    if (keyCode === LEFT_ARROW) reaper = reaperleft;
-    if (keyCode === RIGHT_ARROW) reaper = reaperright;
-  }
 
 
+
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) reaper = reaperleft;
+  if (keyCode === RIGHT_ARROW) reaper = reaperright;
 }
 
 function checkForKeys() {
