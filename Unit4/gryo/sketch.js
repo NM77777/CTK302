@@ -60,9 +60,9 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(200);
   textAlign(CENTER);
-  text("Ho Ho", width / 2, height / 2);
+  text("Ho Ho Ho", width / 2, height / 2);
 
 }
 
