@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("assets/bunny.jpg");
+  bunnyImage = loadImage("santa.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('#191970'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -44,7 +44,7 @@ function draw() {
   // Text commands that display debugging data
   textAlign(LEFT);
   textSize(20);
-  fill('black');
+  fill('white');
   text("orientation data:", 25, 25);
   textSize(15);
   text("alpha: " + alpha, 25, 50);
@@ -62,7 +62,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("ctk", width / 2, height / 2);
+  text("Ho Ho", width / 2, height / 2);
 
 }
 
