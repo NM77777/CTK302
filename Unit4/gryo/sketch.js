@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("santa.png");
+  bunnyImage = loadImage("Santa.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
