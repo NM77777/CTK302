@@ -8,6 +8,8 @@ var yPosition = 0;
 
  var s;
  var cp;
+ var cp2;
+ var snow;
 var cars = [];
 var frogPos;
 
@@ -33,6 +35,10 @@ function setup() {
   // load any images you need
   s = loadImage("Santa1.png");
   cp = loadImage("cp.png");
+  cp2 = loadImage("cp2.png");
+  snow = loadImage("snow.jpeg");
+
+
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -40,7 +46,7 @@ function setup() {
 
 function draw() {
 
-  background('#191970'); // light blue
+   image(snow, width/2, height/2, windowWidth, windowHeight); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -78,7 +84,7 @@ function draw() {
   fill('white');
   textSize(40);
   textAlign(CENTER);
-  text("Collect the presents quick!", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Collect the presents quick!", width / 2, 600, windowWidth - 200, windowHeight - 100);
 
 
   // Debugging information -- take this out when you're ready for production!
@@ -149,7 +155,7 @@ function Car() {
     // maybe use an image here instead!
     // fill(this.r, this.g, this.b, this.a);
     image(cp,this.pos.x - 50, this.pos.y, 50, 50);
-    // image(cp,this.pos.x + 50, this.pos.y, 50, 50);
+     image(cp2,this.pos.x + 50, this.pos.y, 50, 50);
     // image(cp,this.pos.x + 17, this.pos.y - 30, 80, 60) ;
 
   }
