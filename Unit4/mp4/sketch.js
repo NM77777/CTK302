@@ -46,7 +46,7 @@ function setup() {
 
 function draw() {
 
-   image(snow, width/2, height/2, windowWidth, windowHeight); // light blue
+  image(snow, width/2, height/2, windowWidth, windowHeight);  // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -81,10 +81,10 @@ function draw() {
   }
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   textSize(40);
   textAlign(CENTER);
-  text("Collect the presents quick!", width / 2, 600, windowWidth - 200, windowHeight - 100);
+  text("Collect the presents quick!", width / 2, 600, windowWidth - 200, windowHeight - 50);
 
 
   // Debugging information -- take this out when you're ready for production!
